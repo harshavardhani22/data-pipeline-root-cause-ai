@@ -1,0 +1,11 @@
+order_id,customer_id,product,category,quantity,amount,date
+1001,CUSTOMER_501,Laptop,Electronics,1,55000,2026-09-01
+1002,CUSTOMER_502,Mouse,Electronics,2,1200,2026-09-01
+1003,CUSTOMER_503,Keyboard,Electronics,1,2500,2026-09-01
+1004,CUSTOMER_504,Chair,Furniture,1,8500,2026-09-02
+1005,CUSTOMER_505,Desk,Furniture,1,12000,2026-09-02
+1006,CUSTOMER_506,Monitor,Electronics,2,30000,2026-09-02
+1007,CUSTOMER_507,Phone,Electronics,1,45000,2026-09-03
+1008,CUSTOMER_508,Headphones,Electronics,2,5000,2026-09-03
+1009,CUSTOMER_509,Table,Furniture,1,7500,2026-09-03
+1010,CUSTOMER_510,Printer,Electronics,1,15000,2026-09-04

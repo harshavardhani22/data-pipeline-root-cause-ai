@@ -1,0 +1,69 @@
+Picked up JAVA_TOOL_OPTIONS: -Dstdout.encoding=UTF-8 -Dstderr.encoding=UTF-8
+Picked up JAVA_TOOL_OPTIONS: -Dstdout.encoding=UTF-8 -Dstderr.encoding=UTF-8
+WARNING: Using incubator modules: jdk.incubator.vector
+26/09/13 09:34:36 WARN Shell: Did not find winutils.exe: java.io.FileNotFoundException: java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset. -see https://cwiki.apache.org/confluence/display/HADOOP2/WindowsProblems
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+C:\Users\LENOVO\Downloads\data-pipeline-root-cause-ai-starter\.venv\Lib\site-packages\pyspark\testing\utils.py:127: FutureWarning: PySpark does not yet fully support pandas >= 3.0.0. Some features may not work correctly. It is recommended to use pandas < 3.0.0 for now.
+  require_minimum_pandas_version()
+26/09/13 09:34:36 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+
+===== READING RAW DATA =====
+
+===== RAW DATA =====
++--------+-----------+----------+-----------+--------+------+----------+
+|order_id|customer_id|   product|   category|quantity|amount|      date|
++--------+-----------+----------+-----------+--------+------+----------+
+|    1001|        501|    Laptop|Electronics|       1| 55000|2026-09-01|
+|    1002|        502|     Mouse|Electronics|       2|  1200|2026-09-01|
+|    1003|        503|  Keyboard|Electronics|       1|  2500|2026-09-01|
+|    1004|        504|     Chair|  Furniture|       1|  8500|2026-09-02|
+|    1005|        505|      Desk|  Furniture|       1| 12000|2026-09-02|
+|    1006|        506|   Monitor|Electronics|       2| 30000|2026-09-02|
+|    1007|        507|     Phone|Electronics|       1| 45000|2026-09-03|
+|    1008|        508|Headphones|Electronics|       2|  5000|2026-09-03|
+|    1009|        509|     Table|  Furniture|       1|  7500|2026-09-03|
+|    1010|        510|   Printer|Electronics|       1| 15000|2026-09-04|
++--------+-----------+----------+-----------+--------+------+----------+
+
+
+===== SCHEMA =====
+root
+ |-- order_id: integer (nullable = true)
+ |-- customer_id: integer (nullable = true)
+ |-- product: string (nullable = true)
+ |-- category: string (nullable = true)
+ |-- quantity: integer (nullable = true)
+ |-- amount: integer (nullable = true)
+ |-- date: date (nullable = true)
+
+
+===== CLEAN DATA =====
++--------+-----------+----------+-----------+--------+------+----------+
+|order_id|customer_id|   product|   category|quantity|amount|      date|
++--------+-----------+----------+-----------+--------+------+----------+
+|    1001|        501|    Laptop|Electronics|       1| 55000|2026-09-01|
+|    1002|        502|     Mouse|Electronics|       2|  1200|2026-09-01|
+|    1003|        503|  Keyboard|Electronics|       1|  2500|2026-09-01|
+|    1004|        504|     Chair|  Furniture|       1|  8500|2026-09-02|
+|    1005|        505|      Desk|  Furniture|       1| 12000|2026-09-02|
+|    1006|        506|   Monitor|Electronics|       2| 30000|2026-09-02|
+|    1007|        507|     Phone|Electronics|       1| 45000|2026-09-03|
+|    1008|        508|Headphones|Electronics|       2|  5000|2026-09-03|
+|    1009|        509|     Table|  Furniture|       1|  7500|2026-09-03|
+|    1010|        510|   Printer|Electronics|       1| 15000|2026-09-04|
++--------+-----------+----------+-----------+--------+------+----------+
+
+
+Total valid records: 10
+
+===== PIPELINE SUCCESS =====
+Data ingestion       : SUCCESS
+Schema inference     : SUCCESS
+Data cleaning        : SUCCESS
+Validation           : SUCCESS
+==============================
+SUCCESS: The process with PID 10812 (child process of PID 8944) has been terminated.
+SUCCESS: The process with PID 8944 (child process of PID 5804) has been terminated.
+SUCCESS: The process with PID 5804 (child process of PID 10964) has been terminated.
