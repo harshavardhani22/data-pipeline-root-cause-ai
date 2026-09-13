@@ -1,0 +1,35 @@
+def detect_log_errors(log_text):
+
+    errors = []
+
+    log_lower = log_text.lower()
+
+    if "schema" in log_lower and "failed" in log_lower:
+        errors.append({
+            "error_type": "SCHEMA_DRIFT",
+            "severity": "HIGH",
+            "message": "Schema validation failed"
+        })
+
+    if "expected integer" in log_lower and "received string" in log_lower:
+        errors.append({
+            "error_type": "TYPE_MISMATCH",
+            "severity": "HIGH",
+            "message": "Column type changed from INTEGER to STRING"
+        })
+
+    if "pyspark job failed" in log_lower:
+        errors.append({
+            "error_type": "PIPELINE_FAILURE",
+            "severity": "HIGH",
+            "message": "PySpark pipeline execution failed"
+        })
+
+    if "downstream pipeline" in log_lower:
+        errors.append({
+            "error_type": "DOWNSTREAM_IMPACT",
+            "severity": "HIGH",
+            "message": "Downstream pipeline execution stopped"
+        })
+
+    return errors

@@ -1,0 +1,7 @@
+2026-09-13 10:00:01 INFO Pipeline started
+2026-09-13 10:00:05 INFO Reading sales data
+2026-09-13 10:00:08 INFO Schema validation started
+2026-09-13 10:00:09 ERROR Schema validation failed
+2026-09-13 10:00:09 ERROR Column customer_id expected INTEGER but received STRING
+2026-09-13 10:00:10 ERROR PySpark job failed
+2026-09-13 10:00:10 ERROR Downstream pipeline execution stopped
