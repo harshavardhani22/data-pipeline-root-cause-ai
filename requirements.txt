@@ -1,3 +1,4 @@
 pandas
 pyspark
 scikit-learn
+streamlit
